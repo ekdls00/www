@@ -1,0 +1,40 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 재무정보 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; width: 1200px;}
+.contentArea .conTitle{
+    position: relative; height: 200px; text-align: center;
+}
+
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 150px auto 50px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+
+/* 그래프 */
+.contentArea .financeChart{width: 1200px; height: 700px; margin: 0 auto;}
+.financeChart .chart{float: left; margin: 0 25px;}
+.financeChart .chart #myChart1,  #myChart2, #myChart3{width: 350px;}
+.financeChart .chart p:nth-child(1){font-size: 1.5em; color: #666; line-height: 2em; }
+.financeChart .chart p:nth-child(2){color: #999; line-height: 2em; text-align: right; margin-right: 10px;}
+
+/* 표 */
+.contentArea .schedule{margin:0 auto 200px;}
+.contentArea .schedule  h3{font-size: 2.5em; font-weight: 500;margin-bottom: 40px;}
+.contentArea .schedule  p{color: #666; text-align: right; margin: 0 10px 10px 0}
+.contentArea .schedule span{float: right;}
+.contentArea .schedule table{ margin: 0 auto; border-top: 2px solid #999;}
+.schedule table th{
+    width: 400px; border-bottom: 1px solid #ccc; font-size: 1.25em;
+    font-weight: 500; padding: 10px 0; background: #f3f3f3;
+}
+.schedule table tr td:nth-of-type(2){
+    border-left: 1px solid #ccc; border-right: 1px solid #ccc;
+}
+.schedule table tr td:nth-of-type(3){border-right: 1px solid #ccc;}
+.schedule table td:nth-of-type(1){font-weight:500;}
+.schedule table td {border-bottom: 1px solid #ccc;  padding: 10px 0; font-weight: 300; }
+

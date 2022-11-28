@@ -1,0 +1,91 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.main {
+  background: url(../image/sub3_tilte.png) center no-repeat; background-size: cover; width: 100%; position: relative; height: 200px;}
+.main h3{
+  font-size: 2em; color: #fff; position: absolute; font-weight: 400;
+  left: 50%; width: 110px; top: 90px; margin-left: -55px;
+}
+
+/* 서브 네비 영역 */
+.subNav{border-bottom: 1px solid #ccc;} 
+.subNav ul{ margin: 0 auto; overflow: hidden; text-align: center; }
+.subNav ul li{position: relative;  float: left; width: 33.3%;}
+.subNav ul li a{
+    display: inline-block; font-weight: 500; line-height: 2em; padding: 10px 0; font-size: 1.071rem; width: 100%;
+}
+.subNav ul li .current{color: #da291c; border-bottom: 2px solid #da291c; width: 100%;}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .titleArea h2{
+  font-size: 2rem; font-weight: 500; text-align: center;
+  margin: 50px 0; position: relative;
+}
+.contentArea .titleArea h2::before{
+  content: ''; position: absolute; width: 3px; height: 40px; 
+  background: #da291c; top: 70px; left: 50%;
+}
+.contentArea .conTitle{
+    position: relative;}
+.contentArea .conTitle p:nth-child(1){ 
+    display: block; width: 80%; text-align: center;
+    font-size: 1.143rem; margin: 90px auto 30px; line-height: 1.5em;
+}
+.contentArea .titlePont{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    line-height: 2em; width: 90%; margin: 0 auto;
+}
+
+/* slogan */
+.contentArea .slogan{
+  width: 100%; background: #f2f3f5; margin-bottom: 50px;
+}
+.contentArea .slogan .image{padding: 20px 0;}
+.contentArea .slogan img{}
+.contentArea .slogan dl{text-align: justify; margin: 10px auto; width: 90%; margin-bottom: 50px;}
+.contentArea .slogan dt{color: #666; font-weight: 500;}
+.contentArea .slogan dd{
+  color: #666; font-weight: 400; padding: 20px 0; line-height: 1.8em;}
+
+/* 방침 */
+.contentArea .policy{margin-bottom: 50px;}
+.policy .policyTitle{margin-bottom: 20px;}
+.policy .policyTitle h3{font-size: 1.5em; font-weight: 500; margin-bottom: 20px;}
+.policy .policyTitle>p{line-height: 1.5em; width: 90%; margin: 20px auto; color: #999;}
+.policy .policyCon{
+  background: #f2f2f2; text-align: justify; letter-spacing: -.5px;
+  line-height: 2em; box-shadow: 5px 5px 5px rgba(205, 205, 205, .5);
+}
+.policy .policyCon ul{width: 90%; margin: 0 auto; padding: 20px 0 5px;}
+.policy .policyCon p:nth-child(1){float: left; color: #da291c; margin-right: 15px;}
+.policy .policyCon p:nth-child(2){color: #666; margin-bottom: 20px;}
+
+/* 목표 */
+.contentArea .goal{margin-bottom: 50px;}
+.goal .goalTitle{margin-bottom: 20px;}
+.goal .goalTitle h3{font-size: 1.5em; font-weight: 500; margin-bottom: 20px;}
+.goal .goalTitle>p{line-height: 1.5em; width: 90%; margin: 20px auto; color: #999;}
+.goal .goalCon{
+  background: #f2f2f2; text-align: justify; letter-spacing: -.5px;
+  line-height: 2em; box-shadow: 5px 5px 5px rgba(205, 205, 205, .5);
+}
+.goal .goalCon ul{width: 90%; margin: 0 auto; padding: 20px 0 5px;}
+.goal .goalCon p:nth-child(1){float: left; color: #da291c; margin-right: 15px;}
+.goal .goalCon p:nth-child(2){color: #666; margin-bottom: 20px;}
+
+
+.contentArea .safety{position: relative; padding: 40px 5%;}
+.contentArea .safety::before{
+  content: ''; width: 100%; height: 100%; top: 0; left: 0;
+  position: absolute; background: url(../image/sub3_safety.png) center no-repeat;
+  background-attachment: fixed; z-index: -10; background-size: contain;
+}
+.contentArea .safety h3{
+  font-size: 1.5em; color: #fff; text-align: justify; font-weight: 400; 
+  margin-bottom: 20px;
+}
+.contentArea .safety p{
+  color: #fff; text-align: justify; font-weight: 300; line-height: 1.5em;
+}

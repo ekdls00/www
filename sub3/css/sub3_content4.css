@@ -1,0 +1,83 @@
+body {font-family: "Noto Sans KR", sans-serif;}
+
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{
+    position: relative; text-align: center; margin-bottom: 100px;
+}
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 50px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 1.5em; margin: 0 auto;
+}
+
+/* 슬로건 */
+.contentArea .sloganArea{margin-bottom: 150px;}
+.sloganArea .slogan{
+    width: 1000px; height: 100px; background: #da291c; border-radius: 60px; margin: 0 auto;
+}
+.sloganArea .slogan p:nth-child(1){
+    color: transparent; font-size: 1.875em; padding-top: 20px; position: relative; white-space: nowrap; 
+}
+.sloganArea .slogan p:nth-child(1)::before{
+    content: "“ FINE TODAY, GREEN TOMORROW ”"; position: absolute; 
+    top: 20px; left: 245px; width: 100%; height: 65%; color: #fff;
+    overflow: hidden; border-right: 1px solid rgb(255, 255, 255);
+    animation: typing 6s steps(31) infinite;
+}
+
+@keyframes typing{
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 51%;
+    }
+    100%{
+        width: 51%; 
+    }
+}
+.sloganArea .slogan p:nth-child(2){color: rgba(255, 255, 255, .5);}
+
+.sloganArea .keyword{margin:100px auto 100px; height: 400px;}
+.keyword li{position: relative; width: 280px; height: 300px; float: left; border: 1px solid #999; margin: 5px;}
+.keyword li:nth-child(1)::before{
+    content: ''; position: absolute; top: 40px; left: 60px; width: 150px; height: 150px;
+    background: url(../images/sub4/dream.png) center no-repeat;
+}
+.keyword li:nth-child(2)::before{
+    content: ''; position: absolute; top: 40px; left: 70px; width: 150px; height: 150px;
+    background: url(../images/sub4/eco.png) center no-repeat;
+}
+.keyword li:nth-child(3)::before{
+    content: ''; position: absolute; top: 40px; left: 70px; width: 150px; height: 150px;
+    background: url(../images/sub4/sysnergy.png) center no-repeat;
+}
+.keyword li:nth-child(4)::before{
+    content: ''; position: absolute; top: 40px; left: 70px; width: 150px; height: 160px;
+    background: url(../images/sub4/indestry.png) center no-repeat;
+}
+.keyword li dt{font-size: 1.63em; padding-top: 200px; color: #666; margin-bottom: 10px;}
+.keyword li dd{background: #ccc; padding: 15px 0;}
+
+
+/* 사회공헌활동 */
+.contentArea .activity{margin-bottom: 150px; overflow: hidden;}
+.activity .activityTitle{margin-bottom: 20px;}
+.activity .activityTitle h3{font-size: 2.5em; font-weight: 500; margin-bottom: 20px;}
+.activity .activityTitle>p{line-height: 1.5em; margin: 30px 0; color: #999;}
+.activity li{overflow: hidden; height: 430px;}
+.activity .leftList .listImg{float: left; width: 600px; height: 430px; overflow: hidden;}
+.activity li:hover img{transform:scale(1); transition: all .3s;}
+.activity .leftList dl{
+    width: 600px; text-align: justify; padding: 30px 20px; box-sizing: border-box; float: right;}
+.activity .rightList img{float: right;}
+.activity .rightList dl{
+    width: 600px; text-align: justify; padding: 30px 20px; box-sizing: border-box; float: left;}
+.activity li dl dt:nth-child(1){color: #da291c; font-size: 1.25em; font-weight: 500;}
+.activity li dl dt:nth-child(2){font-size: 1.63em; font-weight: 500;}
+.activity li dl dd:nth-of-type(1){margin: 30px 0; font-size: 1.25em; line-height: 1.5em; color: #666;}
+.activity li dl dd:nth-of-type(2){margin-bottom: 30px; font-size: 1.13em; line-height: 2.5em; color: #666; font-weight: 600;}

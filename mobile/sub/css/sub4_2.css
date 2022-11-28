@@ -1,0 +1,109 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.main {
+  background: url(../image/sub4_title.png) center no-repeat; background-size: cover; width: 100%; position: relative; height: 200px;}
+.main h3{
+  font-size: 2em; color: #fff; position: absolute; font-weight: 400;
+  left: 50%; width: 110px; top: 90px; margin-left: -55px;
+}
+
+/* 서브 네비 영역 */
+.subNav{border-bottom: 1px solid #ccc;} 
+.subNav ul{ margin: 0 auto; overflow: hidden; text-align: center; }
+.subNav ul li{position: relative;  float: left; width: 50%;}
+.subNav ul li a{
+    display: inline-block; font-weight: 500; line-height: 2em; padding: 10px 0; font-size: 1.071rem; width: 100%;
+}
+.subNav ul li .current{color: #da291c; border-bottom: 2px solid #da291c; width: 100%;}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .titleArea h2{
+  font-size: 2rem; font-weight: 500; text-align: center;
+  margin: 50px 0; position: relative;
+}
+.contentArea .titleArea h2::before{
+  content: ''; position: absolute; width: 3px; height: 40px; 
+  background: #da291c; top: 70px; left: 50%;
+}
+.contentArea .conTitle{
+    position: relative;}
+.contentArea .conTitle p:nth-child(1){ 
+    display: block; width: 80%; text-align: center;
+    font-size: 1.3rem; margin: 90px auto 30px; line-height: 1.5em;
+}
+.contentArea .titlePont{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    line-height: 2em; width: 90%; margin: 0 auto;
+}
+
+/*selector*/
+#content .selector {
+  position: relative;
+}
+#content .selector a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#content .selector > a{
+  background: #ff0000;
+  color: #fff;
+  width: 94%;
+  margin: 50px 3% 0;
+  font-weight: 700;
+
+}
+#content .selector a i {
+  float: right;
+  font-size: 0.9rem;
+  line-height: 50px;
+  
+}
+#content .selector ul{
+  width: 94%;
+  margin: 0 3%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background: #fff;
+  padding: 10px 0;
+  display: none;
+}
+#content .selector ul li a{
+  font-size: 0.9rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+}
+
+/* 그래프 */
+.contentArea .financeChart{margin: 0 auto;}
+.financeChart .chart{ margin: 0 25px;}
+.financeChart .chart #myChart1,  #myChart2, #myChart3{width: 100px; display: none;}
+.financeChart .chart p:nth-child(1){font-size: 1.5em; color: #666; line-height: 2em; }
+.financeChart .chart p:nth-child(2){color: #999; line-height: 2em; text-align: right; margin-right: 10px;}
+
+/* 표 */
+.contentArea .schedule{margin:0 auto 200px;}
+.contentArea .schedule  h3{font-size: 2.5em; font-weight: 500;margin-bottom: 40px;}
+.contentArea .schedule  p{color: #666; text-align: right; margin: 0 10px 10px 0}
+.contentArea .schedule span{float: right;}
+.contentArea .schedule table{ margin: 0 auto; border-top: 2px solid #999;}
+.schedule table th{
+    width: 400px; border-bottom: 1px solid #ccc; font-size: 1.25em;
+    font-weight: 500; padding: 10px 0; background: #f3f3f3;
+}
+.schedule table tr td:nth-of-type(2){
+    border-left: 1px solid #ccc; border-right: 1px solid #ccc;
+}
+.schedule table tr td:nth-of-type(3){border-right: 1px solid #ccc;}
+.schedule table td:nth-of-type(1){font-weight:500;}
+.schedule table td {border-bottom: 1px solid #ccc;  padding: 10px 0; font-weight: 300; }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>롯데알미늄 공장소개 </title>
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../sub1/common/css/sub1common.css" />
+    <link rel="stylesheet" href="../sub1/css/sub1_content4.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/2b984aa695.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c5513767fc82d0a7cae3882696b3e98c"></script>
+    <script src="./js/kakao_map2.js"></script>
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+
+      <div class="main">
+        <img src="./common/images/sub1_img.jpg" alt="" />
+        <h3>회사소개</h3>
+      </div>
+
+      <!-- 서브 네비 영역 -->
+      <div class="subNav">
+        <ul>
+          <li><a href="./sub1_1.html">기업소개</a></li>
+          <li><a href="./sub1_2.html">주요연혁</a></li>
+          <li><a href="./sub1_3.html">기업비전</a></li>
+          <li><a class="current" href="./sub1_4.html">공장소개</a></li>
+        </ul>
+      </div>
+
+      <!-- 본문 영역 -->
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span>HOME </span>&gt;<span> 회사소개 </span>&gt;<strong>
+              공장소개</strong>
+          </div>
+          <h2>공장소개</h2>
+        </div>
+
+        <!-- 본문 콘텐츠 영역 -->
+        <div class="contentArea">
+          <div class="conTitle">
+            <p>
+              국내외 공장을 통해<br>
+              여러분께 더 나은 제품을 제공합니다.
+            </p>
+          </div>
+
+          <!-- 공장 선택 탭 -->
+          <div class="tabs">
+            <ul>
+              <li><a class="tab factory1" href="#">서울본사</a></li>
+              <li><a class="tab factory2" href="#">안산공장</a></li>
+              <li><a class="tab factory3" href="#">평택공장</a></li>
+              <li><a class="tab factory4" href="#">오산공장</a></li>
+            </ul>
+          </div>
+        
+        <div class="con">
+          <h3 class="hidden">서울본사</h3>
+          <div class="mapArea">
+            <div class="map1" id="map1"></div>
+            <div class="address">
+              <dl>
+                <dt>주소</dt>
+                <dd>
+                  금천구 벚꽃로 104, 11~18층 (독산동 금천 롯데타워)
+                </dd>
+              </dl>
+              <dl>
+                <dt>TEL</dt>
+                <dd>02-801-8000</dd>
+              </dl>
+              <dl>
+                <dt>FAX</dt>
+                <dd>02-6234-2055</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="location">
+            <p>Location</p>
+            <p>롯데알미늄 서울본사</p>
+          </div>
+        </div>
+
+        <div class="con">
+          <h3 class="hidden">안산공장</h3>
+          <div class="mapArea">
+            <div class="map2" id="map2"></div>
+            <div class="address">
+              <dl>
+                <dt>주소</dt>
+                <dd>
+                  경기도 안산시 단원구 해안로 201
+                </dd>
+              </dl>
+              <dl>
+                <dt>TEL</dt>
+                <dd>031-489-5500</dd>
+              </dl>
+              <dl>
+                <dt>FAX</dt>
+                <dd>031-491-4835</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="location">
+            <p>Location</p>
+            <p>롯데알미늄 안산공장</p>
+          </div>
+        </div>
+
+ 
+        <div class="con">
+          <h3 class="hidden">평택공장</h3>
+          <div class="mapArea">
+            <div class="map3" id="map3"></div>
+            <div class="address">
+              <dl>
+                <dt>주소</dt>
+                <dd>
+                  경기도 평택시 산단로16번길 43
+                </dd>
+              </dl>
+              <dl>
+                <dt>TEL</dt>
+                <dd>031-669-8300</dd>
+              </dl>
+              <dl>
+                <dt>FAX</dt>
+                <dd>031-669-8305</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="location">
+            <p>Location</p>
+            <p>롯데알미늄 평택공장</p>
+          </div>
+        </div>
+
+        <div class="con">
+          <h3 class="hidden">오산공장</h3>
+          <div class="mapArea">
+            <div class="map4" id="map4"></div>
+            <div class="address">
+              <dl>
+                <dt>주소</dt>
+                <dd>
+                  경기도 오산시 경기대로 868-20
+                </dd>
+              </dl>
+              <dl>
+                <dt>TEL</dt>
+                <dd>031-370-7000</dd>
+              </dl>
+              <dl>
+                <dt>FAX</dt>
+                <dd>031-372-4149</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="location">
+              <p>Location</p>
+              <p>롯데알미늄 오산공장</p>
+          </div>
+        </div>
+      </div>
+      </article>
+      <? include "../common/sub_footer.html" ?>
+    <script src="./js/tab.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,81 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; width: 1200px;}
+.contentArea .conTitle{text-align: center;}
+.contentArea .conTitle p{ 
+    text-align: center; font-size: 1.875em; line-height: 1.5em; margin: 150px auto 50px;
+}
+.contentArea .titlePont{color: #da291c;}
+
+.contentArea .historyWrap{margin:40px 0;}
+.navBox{ background: #ccc; margin-bottom: 50px;}    
+.navBox .historyNav{width:1000px; margin: 0 auto}
+.navBox ul{overflow: hidden}
+.navBox ul li{float: left; width:25%; text-align: center}
+
+/* 상단에 고정 sticky menu */
+
+.navOn{position: fixed; width: 100%;
+z-index:60; left:0; top: 0;}
+.contentArea .historyWrap .historyNav2{float: left; text-align: right;}
+.historyNav2 .historyCurrent{margin-bottom: 10px;}
+.historyNav2 .nextNav li{margin: 30px 0;}
+.historyNav2 h3{font-size:6em;}
+.historyNav2 li a{font-size: 1.875em; font-weight: 500; color: #999;}
+.navBox ul li a{display: block; font-size: 2em; font-weight: bold; background: #ccc;
+padding: 10px 0; color: #333; transition: all .8s}
+/* 메뉴 활성화  scroll spy */
+.navBox ul li a.spy{background: #333; color: #f00}
+#content div.boxMove{
+    top:0; opacity: 1 ; transform: scale(1); left: 0;
+}
+
+
+
+.historyContent .history1{position: relative; margin-bottom: 50px;}
+.historyContent .history1 h3{
+    font-size: 8.5em; color: #da291c; position: absolute; top: 50px; left: 180px;
+}
+.historyContent .history1 img{
+    width: 950px; height: 400px; margin-left: -20px;
+}
+.historyContent .history1 dl{text-align: left; margin-left: 210px; margin-top: 40px; font-size: 1.250em;}
+.historyContent .history1 dl dt{float: left; padding-right: 50px;}
+
+
+/*  */
+.historyContent .history2{position: relative; margin-bottom: 50px;}
+.historyContent .history2 dl{text-align: left; margin-left: 210px; margin-top: 40px; font-size: 1.250em;}
+.historyContent .history2 dl dt{float: left; padding-right: 30px;}
+.historyContent .history2 h3{
+    font-size: 8.5em; color: #da291c; position: absolute; top: 50px; left: 180px;
+}
+.historyContent .history2 img{
+    width: 950px; height: 400px; margin-top:150px; margin-left: 140px;
+}
+
+/*  */
+.historyContent .history3{position: relative; margin-bottom: 50px;}
+.historyContent .history3 dl{text-align: left; margin-left: 210px; margin-top: 40px; font-size: 1.250em;}
+.historyContent .history3 dl dt{float: left; padding-right: 30px;}
+.historyContent .history3 h3{
+    font-size: 8.5em; color: #da291c; position: absolute; top: 50px; left: 180px;
+}
+.historyContent .history3 img{
+    width: 950px; height: 400px; margin-top:150px; margin-left: 140px;
+}
+
+
+/*  */
+.historyContent .history4{position: relative; margin-bottom: 50px;}
+.historyContent .history4 dl{text-align: left; margin-left: 210px; margin-top: 40px; font-size: 1.250em;}
+.historyContent .history4 dl dt{float: left; padding-right: 30px;}
+.historyContent .history4 h3{
+    font-size: 8.5em; color: #da291c; position: absolute; top: 50px; left: 180px;
+}
+.historyContent .history4 img{
+    width: 950px; height: 400px; margin-top:150px; margin-left: 140px;
+}

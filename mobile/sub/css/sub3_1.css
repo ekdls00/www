@@ -1,0 +1,83 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.main {
+  background: url(../image/sub3_tilte.png) center no-repeat; background-size: cover; width: 100%; position: relative; height: 200px;}
+.main h3{
+  font-size: 2em; color: #fff; position: absolute; font-weight: 400;
+  left: 50%; width: 110px; top: 90px; margin-left: -55px;
+}
+
+/* 서브 네비 영역 */
+.subNav{border-bottom: 1px solid #ccc;} 
+.subNav ul{ margin: 0 auto; overflow: hidden; text-align: center; }
+.subNav ul li{position: relative;  float: left; width: 33.3%;}
+.subNav ul li a{
+    display: inline-block; font-weight: 500; line-height: 2em; padding: 10px 0; font-size: 1.071rem; width: 100%;
+}
+.subNav ul li .current{color: #da291c; border-bottom: 2px solid #da291c; width: 100%;}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .titleArea h2{
+  font-size: 2rem; font-weight: 500; text-align: center;
+  margin: 50px 0; position: relative;
+}
+.contentArea .titleArea h2::before{
+  content: ''; position: absolute; width: 3px; height: 40px; 
+  background: #da291c; top: 70px; left: 50%;
+}
+.contentArea .conTitle{
+    position: relative;}
+.contentArea .conTitle p:nth-child(1){ 
+    display: block; width: 80%; text-align: center;
+    font-size: 1.143rem; margin: 90px auto 30px; line-height: 1.5em;
+}
+.contentArea .titlePont{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    line-height: 2em; width: 90%; margin: 0 auto;
+}
+
+/* 첫 번쨰 콘텐츠 */
+.contentArea .core{}
+.coreList{background: #fcfcfc; padding-top: 50px;}
+.coreList li{
+  position: relative; display: grid; grid-template-columns: repeat(2, 100px);
+  width: 90%; margin: 0 auto 30px; background: #fff;
+  align-items: center; border-radius: 10px; padding: 5px 0; box-shadow: 5px 5px 4px rgba(200, 200, 200, .4)
+}
+.coreList ul li img{float: left; width: 80px; margin-left: 20px;}
+.coreList dl{
+  text-align: justify; overflow: hidden; padding-left: 30px; grid-column-start: 2; grid-column-end: 4;
+}
+.coreList dl dt{
+  font-size: 1.143rem; font-weight: 500; border-radius: 160px; 
+}
+.coreList dl dd{margin-top: 10px; color: #999; font-weight: 400;}
+
+
+/* 두 번쨰 콘텐츠 */
+.contentArea .conList{}
+.conList li{ position: relative; height:210px; overflow: hidden; border-bottom: 1px solid #ccc;}
+.conList li dl{margin: 45px 0; }
+.conList li dt{
+    float: left; font-size: 1.143rem; line-height: 1.5em; margin: 20px 10px 20px 100px; 
+    text-align: justify; font-weight: bold; 
+}
+.conList li:nth-child(1)::after{
+    content: ''; position: absolute; top: 0; left: 0; height: 1px; width: 1200px; margin: 0 auto; background: #ccc; 
+}    
+/* 카운트 */
+.conList li:nth-child(1)::before{
+    content: '01'; position: absolute; top: 90px; left: 20px; color: #da291c; font-size: 1.88em; font-weight: bold; 
+}
+.conList li:nth-child(2)::before
+{content: '02'; position: absolute; top: 90px; left: 20px; color: #da291c; font-size: 1.88em;font-weight: bold; 
+}
+.conList li:nth-child(3)::before{
+    content: '03'; position: absolute; top: 90px; left: 20px; color: #da291c; font-size: 1.88em;font-weight: bold; 
+}
+.conList li dd{
+    float: right;  line-height: 1.5em; margin: 0 40px; 
+    text-align: justify; font-weight: 400;
+}

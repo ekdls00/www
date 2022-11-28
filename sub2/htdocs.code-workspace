@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\Users\\Administrator\\Documents\\ALDrive\\Download\\www"
+		},
+		{
+			"path": "..\\..\\..\\..\\Users\\Administrator\\Desktop\\www-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "htdocs"
+	}
+}

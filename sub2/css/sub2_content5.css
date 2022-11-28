@@ -1,0 +1,34 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{}
+
+.contentArea .conTitle p{ 
+    display: block; width: 520px; text-align: center;
+    font-size: 1.875em; margin: 150px auto 80px; line-height: 1.5em;
+}
+
+/* 콘텐츠1 */
+.contentArea .con{margin-bottom: 200px;}
+.contentArea .con .conArea{position: relative; margin: 100px 0 150px; height: 1150px;} 
+.con .conArea img{
+    position: relative; top: 0; left: -400px;  display: block; margin: 0 auto;
+}
+.con .conArea table{ 
+    position: absolute; top: 300px; left: 0; width: 1150px; margin: 0 auto; box-shadow: 5px 5px 5px 5px rgba(102, 102, 102, .2);
+}
+/* .con .conArea table th:nth-of-type(1){border-right: 1px solid #ccc;} */
+.con .conArea table th{
+    font-size: 1.250em; font-weight: 400; padding: 20px 0; background: #da291c; color: #fff; 
+}
+.con .conArea tr{border-bottom: 1px solid #ccc; }
+.con .conArea tr td:nth-of-type(2){
+    border-left: 1px solid #ccc; 
+}
+.con .conArea td {  padding: 10px 0; font-weight: 300; background: #fff;}
+.con .conArea td:nth-of-type(1){font-weight:400; font-size: 1.250em; padding: 60px 0;}
+.con .conArea td:nth-of-type(2){padding: 50px 0; font-size:1.125em;}
+.con .conArea td ul li{ line-height: 1.8em; text-align: justify; margin-left: 50px; list-style: disc;}

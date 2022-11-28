@@ -1,0 +1,75 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 채용절차 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; width: 1200px;}
+.contentArea .conTitle{
+    position: relative; height: 180px; text-align: center;
+}
+
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 150px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+/* 채용절차 */
+.contentArea .process{margin: 0 auto 200px;}
+.contentArea .process ul{}
+.contentArea .process li{
+    float: left; width: 203px; height: 205px; margin: 15px;
+    border: 3px solid #877669; border-radius: 110px; position: relative;
+}
+.contentArea .process li:nth-child(5){
+    border: 3px solid #da291c; 
+}
+.contentArea .process li:nth-child(4)::before{
+    content: ''; position: absolute; top: 90px; left: 210px; 
+    background: url(../images/sub2/right-arrow.png) 50% 50% no-repeat;
+    width: 25px; height: 25px; background-size: 20px auto;
+}
+.contentArea .process li:nth-child(5)::before{background: none;}
+.contentArea .process li::before{
+    content: ''; position: absolute; top: 100px; left: 205px; background: #999; width: 32px; height: 2px;
+}
+
+
+.contentArea .process p{
+    margin: 50px auto 0; width: 120px; font-weight: 500; font-size:1.125em; color: #999;
+}
+/* .contentArea .process li p:nth-child(1){
+    margin: 25px auto; width: 120px; font-size: 1.5em; font-weight: 500;
+} */
+.contentArea .process li p:nth-child(2){
+    margin: 25px auto; width: 120px; font-size: 1.5em; font-weight: 500; color: #333;
+}
+/* 체용절차 자세한 내용 */
+.contentArea .proDetail{margin-bottom: 100px; height: 350px;}
+.proDetail li{ float: left; width: 200px; height: 260px; margin: 20px; background: #f3f3f3; }
+.proDetail li dl{width: 160px; margin: 0 auto; position: relative;}
+.proDetail li dl span{ display: block; color: #666;  margin: 25px 0 10px;}
+.proDetail li dl dt{font-size:1.125em; margin-bottom: 40px;}
+.proDetail li dl dt::before{
+    content: ''; top: 80px; left: 0; position: absolute; background: #ccc; width: 170px; height: 1px;
+}
+.proDetail li dl dd{line-height: 1.6em; text-align: justify;}
+
+/* 채용일정 */
+.contentArea .schedule{margin:0 auto 200px;}
+.contentArea .schedule  h3{font-size: 2.5em; font-weight: 500;margin-bottom: 50px;}
+.contentArea .schedule span{float: right;}
+.contentArea .schedule table{ margin: 0 auto; border-top: 2px solid #999;}
+.schedule table th{
+    width: 400px; border-bottom: 1px solid #ccc; font-size: 1.25em;
+    font-weight: 500; padding: 10px 0; background: #f3f3f3;
+}
+.schedule table tr td:nth-of-type(2){
+    border-left: 1px solid #ccc; border-right: 1px solid #ccc;
+}
+.schedule table td:nth-of-type(1){font-weight:500;}
+.schedule table td {border-bottom: 1px solid #ccc;  padding: 10px 0; font-weight: 300; }

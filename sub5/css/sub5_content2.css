@@ -1,0 +1,49 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 채용절차 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; width: 1200px;}
+.contentArea .conTitle{
+    position: relative; height: 180px; text-align: center;
+}
+
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 150px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+.faqArea{width:1200px; border-top:1px solid #ccc; margin: 20px 0 100px;}  
+.faqArea .faqGroup{position:relative; margin: 0 auto;}  
+.faqArea .faqGroup .all{
+    position:absolute; top:-60px; right:10px; color: #fff; background-color: #999;
+    padding: 10px 15px; transition: all .6s; border-radius: 5px;
+}  
+.faqArea .faqGroup .all:hover{ color: #fff; background: #da291c;}  
+.faqArea .faqGroup .all span{margin-right: 10px;}
+
+.faqArea .article{list-style: none;}
+.faqArea .article .q{
+    position:relative; font-size: 1.25em;
+    padding: 20px 0 20px 180px; text-align: justify; border-bottom: 1px solid #e5e5e5;
+}  
+.faqArea .article .q::before{
+    content: ''; position: absolute; top: 30px; left: 100px; width: 22px; height: 28px; background: url(../images/sub2/qImg.png) 0 0 no-repeat;
+} 
+.faqArea .article .a{
+    position: relative; padding: 20px 195px;  background: #f3f3f3; border-top: 1px dotted #eee; line-height: 1.7em; font-size: 1.13em;
+}
+.faqArea .article .a::before{
+    content: ''; position: absolute; top: 30px; left: 100px; width: 26px; height: 26px; background: url(../images/sub2/aImg.png) 0 0 no-repeat;
+} 
+.faqArea .q a.trigger{display:block; padding:10px 15px; color:#333;}  
+.faqArea .hide .q a.trigger{font-weight:normal; background:none}    
+.faqArea .a{padding:10px 15px;line-height:1.5em; text-align: justify; overflow:hidden; display: none;} /*답변을 모두 닫아둔 상태로 만들기*/
+
+.hidden{display: block; position: absolute; left:-1000%; top:0; width: 1px;
+        height: 1px; overflow: hidden; color: #fff;}

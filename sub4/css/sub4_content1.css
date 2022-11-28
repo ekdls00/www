@@ -1,0 +1,61 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{
+    position: relative; height: 250px; text-align: center;
+}
+
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 150px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+.contentArea .talent{
+    width: 2000px;height: 620px; margin: 0 0 200px -300px; 
+    background: rgba(102, 102, 102, .5); position: relative;
+}
+.contentArea .talent::before{
+    content: ''; background: url(../images/people.jpg);
+    width: 2000px; height: 620px; margin: 0 0 200px; 
+    background-size: cover; overflow: .5; position: absolute;
+    top: 0; left: 0; z-index: -10; transition: all 0.6s ease-out; transform: scale(1);
+}
+.contentArea .talent ul{width: 1200px; margin: 0 auto; position: relative;}
+.talent li{float: left; width: 400px; height: 620px; transition: ease-out .5s;}
+.talent li:hover{background: rgba(102, 102, 102, .6); }
+.talent li::after{
+    content: ''; position: absolute; width: 1px; height: 620px;
+    background: #fff; top: 0; left: 0;
+}
+.talent li::before{
+    content: ''; position: absolute; width: 1px; height: 620px;
+    background: #fff; top: 0; left: 400px;
+}
+.talent li:nth-child(2)::before{
+    content: ''; position: absolute; width: 1px; height: 620px;
+    background: #fff; top: 0; left: 800px;
+}
+.talent li:nth-child(3)::before{
+    content: ''; position: absolute; width: 1px; height: 620px;
+    background: #fff; top: 0; left: 1200px;
+}
+
+.talent li dl{margin: 100px 30px; color: #fff;}
+.talent li dl dt{font-size: 2em; font-weight: 500;}
+.talent li dl dd:nth-child(2){
+    font-size: 1.80em; font-weight: 500; width: 300px; text-align: center;
+    margin: 50px auto ;
+}
+.talent li dl dd:nth-child(3){
+    font-size: 1.2em; line-height: 2em; font-weight: 300; width: 300px; text-align: center;
+    margin: 50px auto ;
+}
+.talent:hover.talent::before { height: 620px; transform: scaleX(1.01); }

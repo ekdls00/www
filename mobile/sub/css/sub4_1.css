@@ -1,0 +1,71 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.main {
+  background: url(../image/sub4_title.png) center no-repeat; background-size: cover; width: 100%; position: relative; height: 200px;}
+.main h3{
+  font-size: 2em; color: #fff; position: absolute; font-weight: 400;
+  left: 50%; width: 110px; top: 90px; margin-left: -55px;
+}
+
+/* 서브 네비 영역 */
+.subNav{border-bottom: 1px solid #ccc;} 
+.subNav ul{ margin: 0 auto; overflow: hidden; text-align: center; }
+.subNav ul li{position: relative;  float: left; width: 50%;}
+.subNav ul li a{
+    display: inline-block; font-weight: 500; line-height: 2em; padding: 10px 0; font-size: 1.071rem; width: 100%;
+}
+.subNav ul li .current{color: #da291c; border-bottom: 2px solid #da291c; width: 100%;}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .titleArea h2{
+  font-size: 2rem; font-weight: 500; text-align: center;
+  margin: 50px 0; position: relative;
+}
+.contentArea .titleArea h2::before{
+  content: ''; position: absolute; width: 3px; height: 40px; 
+  background: #da291c; top: 70px; left: 50%;
+}
+.contentArea .conTitle{
+    position: relative;}
+.contentArea .conTitle p:nth-child(1){ 
+    display: block; width: 80%; text-align: center;
+    font-size: 1.3rem; margin: 90px auto 30px; line-height: 1.5em;
+}
+.contentArea .titlePont{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    line-height: 2em; width: 90%; margin: 0 auto;
+}
+
+/* 첫 번쨰 콘텐츠 */
+.faqArea{ border-top:1px solid #ccc; margin: 80px 0 100px;}  
+.faqArea .faqGroup{position:relative;}  
+.faqArea .faqGroup .all{
+  position: absolute; top: -50px; right: 10px; color: #fff; background-color: #999; padding: 8px 10px; transition: all .6s; border-radius: 5px;
+}  
+.faqArea .faqGroup .all:hover{ color: #fff; background: #da291c;}  
+
+.faqArea .article{list-style: none;}
+.faqArea .article .q{
+  position: relative; padding: 20px 0 20px 70px; text-align: justify; border-bottom: 1px solid #e5e5e5;
+}  
+.faqArea .article .q::before{
+    content: ''; position: absolute; top: 35px; left: 5%; width: 20px; height: 20px; background: url(../image/sub4_qImg.png) center no-repeat; background-size: contain;
+} 
+.faqArea .article .a{
+  position: relative; padding: 10px 10% 10px 80px; background: #f3f3f3;  border-top: 1px dotted #eee; line-height: 2em;
+}
+.faqArea .article .a::before{
+    content: ''; position: absolute; top: 30px; left: 5%; width: 20px; height: 20px; background: url(../image/sub4_aImg.png) center no-repeat; background-size: contain;
+} 
+.faqArea .q a.trigger{display:block; padding:10px 15px; color:#333;     font-size: 1.143rem;}  
+.faqArea .hide .q a.trigger{font-weight:normal; background:none; font-size: 1.143rem;}    
+.faqArea .a{ /*답변을 모두 닫아둔 상태로 만들기*/
+  padding:10px 15px;line-height:1.5em; text-align: justify; overflow:hidden; display: none;
+}
+
+.hidden{
+    display: block; position: absolute; left:-1000%; top:0; width: 1px;
+    height: 1px; overflow: hidden; color: #fff;
+}

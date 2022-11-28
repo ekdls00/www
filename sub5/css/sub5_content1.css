@@ -1,0 +1,20 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{
+    position: relative; height: 250px; text-align: center;
+}
+
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 150px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+

@@ -1,0 +1,414 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+} /* --> * 이랑 같지만 이게 가독성이 더 높음: w3C에서 권장하는 방법*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "돋움", Dotum, "굴림", Gulim, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+address {
+  font-style: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+.hidden {
+  display: block;
+  position: absolute;
+  left: -1000%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: #fff;
+}
+#skipNav {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 60;
+}
+#skipNav a {
+  display: block;
+  height: 1px;
+  margin-bottom: -1px;
+  font-size: 1.2em;
+  color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+  height: auto;
+  padding: 10px 0;
+  background: #f2f2f2;
+  /* auto는 청므 상태로 돌아가라는 것 */
+}
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 
+font-family: 'Noto Sans KR', sans-serif; 
+font-family: 'Roboto', sans-serif;
+*/
+
+/* on */
+#headerArea.on h1 a {
+  background-image: url(../images/logo_red.png);
+}
+
+/* header 공통영역 --> height는 지우기 */
+#headerArea {
+  font-family: "Noto Sans KR", sans-serif;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.5s;
+}
+#headerArea .headerInner {
+  width: 1200px;
+  margin: 0 auto;
+}
+#gnb {
+  width: 750px;
+  float: left;
+}
+#gnb ul.dropdownmenu {
+  float: left;
+  width: 800px;
+}
+#gnb ul.dropdownmenu li.menu {
+  position: relative;
+  float: left;
+  width: 16.66%;
+  height: 50px;
+  padding-top: 20px;
+}
+#gnb ul.dropdownmenu li a.depth1 {
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  transition: color 0.5s;
+  font-size: 1.25em;
+}
+#headerArea .dropdownmenu > li:hover ul {
+  background: rgba(218, 41, 28, 0.1);
+}
+/* 2depth */
+#gnb ul.dropdownmenu li ul {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  padding: 30px 044x;
+  line-height: 2em;
+  display: none;
+}
+#gnb ul.dropdownmenu li ul li {
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.5em;
+  font-weight: 400;
+}
+#gnb ul.dropdownmenu li ul li a {
+  display: block;
+  transition: all 0.5s;
+}
+#gnb ul.dropdownmenu li ul li a:hover {
+  color: #da291c;
+}
+#headerArea h1 {
+  width: 220px;
+  float: left;
+}
+#headerArea h1 a {
+  width: 220px;
+  height: 70px;
+  background: url(../images/logo_white.png) 0 50% no-repeat;
+  display: block;
+  margin-top: 10px;
+  text-indent: -9999px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+#headerArea:hover h1 a {
+  background: url(../images/logo_red.png) 0 50% no-repeat;
+  display: block;
+  width: 220px;
+  height: 70px;
+  margin-top: 10px;
+  text-indent: -9999px;
+}
+
+#headerArea .top {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+#headerArea .top li {
+  float: left;
+  margin: 40px 20px;
+}
+#headerArea .top li a {
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.8s ease-out;
+}
+
+#headerArea .top li a::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  left: 85px;
+  top: 43px;
+}
+
+/* footer 공통영역 */
+#footerArea {
+  background: #f3f3f3;
+  height: 283px;
+}
+#footerArea .footerInner {
+  width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+#footerArea .footerInner .footerLogo {
+  float: left;
+  margin: 130px 80px 20px 0;
+}
+#footerArea .footerInner .footerCenter {
+  float: left;
+  width: 700px;
+  margin: 50px 0 0 0;
+}
+#footerArea .footerInner .footerCenter .footerTop {
+  margin-bottom: 50px;
+}
+#footerArea .footerInner .footerCenter .footerTop li {
+  float: left;
+  font-weight: 500;
+  margin-right: 40px;
+}
+#footerArea .footerCenter address span {
+  display: block;
+  margin-bottom: 10px;
+}
+#footerArea .footerBottom {
+  margin-top: 25px;
+}
+#footerArea .footerInner .footerRight {
+  float: right;
+  margin-top: 50px;
+}
+#footerArea .family {
+  width: 175px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+#footerArea .family .arrow {
+  display: block;
+  padding: 10px 0 10px 10px;
+  background: #999;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.125em;
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+}
+
+#footerArea .family .aList li:hover .arrow {
+  background: #666;
+}
+#footerArea .family .arrow:hover {
+  background: #666;
+}
+#footerArea .family .aList {
+  width: 175px;
+  position: absolute;
+  top: -245px;
+  left: 0;
+  display: none;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+#footerArea .family .aList a {
+  padding: 10px 0 10px 10px;
+  display: block;
+  background: rgb(212, 212, 212);
+  transition: all 0.5s ease-out;
+}
+#footerArea .family ul a:hover {
+  background: #fff;
+  color: #666;
+}
+#footerArea .sns {
+  margin-left: 5px;
+}
+#footerArea .sns li {
+  float: left;
+  margin: 10px 7px 0 7px;
+}
+#footerArea .sns li i {
+  font-size: 2em;
+  color: #666;
+}
+#footerArea .sns li i:hover {
+  color: #999;
+}
+
+#footerArea .topMove {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  margin-left: 700px;
+  display: block;
+  z-index: 50;
+  position: fixed;
+}
+#footerArea .topMove a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/arrowHover.png) center no-repeat;
+  text-indent: -9999px;
+  background-size: 50%;
+  transition: ease-out 0.5s;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+#footerArea .topMove a:hover {
+  background: url(../images/arrow.png) center no-repeat #da291c;
+  background-size: 50%;
+}

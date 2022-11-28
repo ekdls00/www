@@ -1,0 +1,53 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 공장소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; width: 1200px;}
+.contentArea .conTitle p{ 
+    text-align: center; font-size: 1.875em; line-height: 1.5em; margin: 150px auto 50px;
+}
+.con #map1, #map2, #map3, #map4{
+    width: 1200px; height: 500px; margin: 50px auto 0; 
+}
+
+
+
+/* 공장 선택 탭 */
+.tabs{margin: 100px auto 50px; overflow: hidden; text-align: center;}
+.tabs ul{display: inline-block;}
+.tabs ul li{float: left; margin: 0 100px 15px; font-size: 1.5em; font-weight: 500;}
+.tabs ul li a:hover{color: #da291c; position: relative;}
+.tabs ul li a::before{
+    position: absolute;
+    content: ''; top: 45px; left: 40px; width: 10px; height: 10px; background: rgba(218, 41, 28, 0); border-radius: 5px; 
+    display: block;
+}
+.tabs ul li a:hover::before{
+     background: rgba(218, 41, 28, 1);
+}
+
+
+.con{position: relative;}
+.con .mapArea{
+    overflow: hidden;
+}
+.con .address{
+   margin: 25px 0 150px 50%; text-align: justify;
+}
+.con dl{margin-bottom: 20px; font-size: 1.375em;}
+.con dt{float: left; margin-right: 50px; font-weight:bold;}
+.con .location{
+    position: absolute; top: 470px; left: 150px; 
+    background: rgba(51, 51, 51, .8); width: 345px; height: 255px;
+    margin: 20px; text-align: justify; float: left; z-index: 100;
+}
+.con .location p:nth-child(1){
+    color: #da291c; margin: 50px 40px 20px 45px ; text-align: justify; font-size: 1.250em;
+    font-family: "Roboto", sans-serif; font-weight: bold;
+}
+.con .location p:nth-child(2){
+    color: #fff;margin: 30px 120px 20px 40px; text-align: justify; 
+    font-size: 2.25em;
+}
+

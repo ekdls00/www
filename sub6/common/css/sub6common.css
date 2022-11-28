@@ -1,0 +1,92 @@
+/* 서브페이지 공통영역 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.main {
+  width: 2000px;
+  height: 500px;
+  position: relative;
+  left: 50%;
+  top: 0;
+  margin-left: -1000px;
+}
+.main h3 {
+  font-size: 3em;
+  color: #fff;
+  position: absolute;
+  font-weight: 400;
+  left: 50%;
+  top: 250px;
+  margin-left: -88px;
+}
+
+/* 서브 네비 영역 */
+.subNav {
+  border-bottom: 1px solid #ccc;
+}
+.subNav ul {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.subNav ul li {
+  float: left;
+  width: 400px;
+  text-align: center;
+}
+.subNav ul li a {
+  display: block;
+  padding: 20px 0;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(99, 99, 99, 0);
+  margin: 0 70px;
+  transition: all 0.8s ease-out;
+}
+.subNav ul li a:hover {
+  color: #da291c;
+  border-bottom: 2px solid #da291c;
+  margin: 0 70px;
+}
+.subNav ul li a:hover .current {
+  color: #da291c;
+  border-bottom: 2px solid rgba(99, 99, 99, 0);
+  margin: 0 70px;
+}
+.subNav ul li .current {
+  color: #da291c;
+  margin: 0 70px;
+  border-bottom: 2px solid #da291c;
+}
+
+/* 본문 영역 */
+#content {
+  width: 1400px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  margin-bottom: 50px;
+  position: relative;
+}
+#content .lineMap {
+  margin: 80px 0 30px 1150px;
+  color: #999;
+}
+#content .titleArea h2 {
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px 0 100px;
+  position: relative;
+}
+#content .titleArea h2::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 60px;
+  background: #da291c;
+  top: 115px;
+  left: 50%;
+}

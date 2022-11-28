@@ -1,0 +1,68 @@
+body {font-family: "Noto Sans KR", sans-serif;}
+
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{
+    position: relative; text-align: center; margin-bottom: 50px;
+}
+.contentArea .conTitle p{ 
+    text-align: center;
+    font-size: 1.875em; margin: 150px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+/* slogan */
+.contentArea .slogan{
+    width: 1200px; height: 300px; background: #f2f3f5;
+    margin-bottom: 150px;
+}
+.contentArea .slogan .image{float: left; margin: 60px 80px;}
+.contentArea .slogan dl{text-align: justify; margin: 70px 0; width: 1120px; padding-top: 70px;}
+.contentArea .slogan dt{font-size: 1.63em; color: #666; font-weight: 500;}
+.contentArea .slogan dd{
+    color: #666; font-weight: 400; padding-top: 20px; line-height: 1.8em;
+    font-size: 1.13em;
+}
+
+/* 방침 */
+.contentArea .policy{margin-bottom: 150px;}
+.policy .policyTitle{margin-bottom: 20px;}
+.policy .policyTitle h3{font-size: 2.5em; font-weight: 500; margin-bottom: 20px;}
+.policy .policyTitle>p{line-height: 1.5em; margin: 30px 0; color: #999;}
+.policy .policyCon{
+    width: 1200px; height: 230px; background: #f2f2f2; text-align: justify;
+    padding: 30px 0 30px 60px; font-size: 1.13em; line-height: 2.5em; box-shadow: 5px 5px 5px rgba(205, 205, 205, .5);
+}
+.policy .policyCon p:nth-child(1){float: left; color: #da291c; margin-right: 15px;}
+.policy .policyCon p:nth-child(2){color: #666;}
+
+/* 목표 */
+.contentArea .goal{margin-bottom: 150px;}
+.goal .goalTitle{margin-bottom: 20px;}
+.goal .goalTitle h3{font-size: 2.5em; font-weight: 500; margin-bottom: 20px;}
+.goal .goalTitle>p{line-height: 1.5em; margin: 30px 0; color: #999;}
+.goal .goalCon{
+    width: 1200px; height: 130px; background: #f2f2f2; text-align: justify;
+    padding: 30px 0 30px 60px; font-size: 1.13em; line-height: 2.5em; box-shadow: 5px 5px 5px rgba(205, 205, 205, .5);
+}
+.goal .goalCon p:nth-child(1){float: left; color: #da291c; margin-right: 15px;}
+.goal .goalCon p:nth-child(2){color: #666;}
+
+
+.contentArea .safety{position: relative; height: 600px; margin-bottom: s;}
+.contentArea .safety::before{
+    content: ''; width: 2000px; height: 600px; top: 0; left: -400px;
+    position: absolute; background: url(../images/sub3/Safety.jpg) center no-repeat;
+    background-attachment: fixed; z-index: -10;
+}
+.contentArea .safety h3{
+    font-size: 2.5em; color: #fff; text-align: justify; font-weight: 400; 
+    padding-top: 180px; margin-bottom: 50px;
+}
+.contentArea .safety p{
+    width: 740px;  font-size: 1.5em; color: #fff; text-align: justify; font-weight: 300; 
+    line-height: 1.5em;
+}

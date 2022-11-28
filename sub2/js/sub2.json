@@ -1,0 +1,165 @@
+{
+    "con1": [
+      {
+        "group":" 알루미늄",
+        "title":"약품포장용(PTP, Alu-Alu)",
+        "path":"images/aluminiumCon1-1.jpg",
+        "con":"약품포장재용 소재는 내약품성과 Barrier성(산소, 수분투과)이 우수한 PTP, Alu-Alu에 사용합니다.",
+        "tCon1":"A1235, A8021",
+        "tCon2":"20~50㎛",
+        "tCon3Name":"담당자 : 양승훈",
+        "tCon3Num":"연락처 : 010-4783-9124",
+        "tCon3Mail":"E-mail : yang-seunghoon@lotte.net"
+      },
+      {
+        "group":" 알루미늄",
+        "title":"치약 Tube용",
+        "path":"images/aluminiumCon1-2.jpg",
+        "con":"치약 Tube에 사용되는 포장용 소재는 내용물의 안정성을 유지하고 보관을 하게 할 목적으로 많은 제품에 사용합니다.",
+        "tCon1":"A1235, A1100, A8021, A8079",
+        "tCon2":"12~50㎛",
+        "tCon3Name":"담당자 : 양승훈",
+        "tCon3Num":"연락처 : 010-4783-9124",
+        "tCon3Mail":"E-mail : yang-seunghoon@lotte.net"
+      },
+      {
+        "group":" 포장류",
+        "title":"양극박(Anodic foil)",
+        "path":"images/aluminiumCon2-1.jpg",
+        "con":"외부의 전기에너지를 화학에너지 형태로 바꾸어 저장해 두었다가 필요할 때 전기를 발생시키는 장치로 양극박에는 알루미늄(AL)이 음극박엔 구리(Cu)가 사용되고 있습니다.",
+        "tCon1":"A1235, A1050, A3003, A1100",
+        "tCon2":"12~20㎛",
+        "tCon3Name":"담당자 : 이호성",
+        "tCon3Num":"연락처 : 010-6354-7951",
+        "tCon3Mail":"E-mail : lhs@lotte.net"
+      },
+      {
+        "group":" 포장류",
+        "title":"동축케이블(Coaxial cable)",
+        "path":"images/aluminiumCon2-2.jpg",
+        "con":"중앙의 구리선을 전도체가 둘러싸고 있는 전송선로의 일종으로 수지 또는 필름 등이 코팅되거나 접합된 알루미늄은 내부 구리 선을 감싸 수분 및 충격으로부터 보호하는 기능을 가집니다.",
+        "tCon1":"A1235, A1050",
+        "tCon2":"100~350㎛",
+        "tCon3Name":"담당자 :  박재현",
+        "tCon3Num":"연락처 : 010-4752-3934",
+        "tCon3Mail":"E-mail : jaehyun.park1@lotte.net"
+      }
+    ],
+    "con2": [
+      {
+        "group":" 용기류",
+        "title":"Inmold 라벨 용기",
+        "path":"images/printCon1-1.jpg",
+        "con":"사출 성형시 금형내에서 성형과 동시에 Label을 부착 하는 방식으로 성형하는 용기입니다.",
+        "tCon1":"커피, 주스, 유제품, 건강음료, 차 등",
+        "tCon2":"라벨의 Curling 안정성이 우수하여 용기 성형시 작업성 우수",
+        "tCon3Name":"담당자 : 김준수",
+        "tCon3Num":"연락처 : 010-2388-4865",
+        "tCon3Mail":"E-mail : junsu_kim@lotte.net"
+      },
+      {
+        "group":" 용기류",
+        "title":"다층 용기 ",
+        "path":"images/printCon1-2.jpg",
+        "con":"Barrier층 구성을 통해 내용물 보존성을 향상시킨 다층 용기입니다.",
+        "tCon1":"밥, 젤리, 죽 등",
+        "tCon2":"내용물 보존성 우수 및 고객의 요청에 맞는 제품 강도 및 투명성, 다양한 색상 구현",
+        "tCon3Name":"담당자 : 김준수",
+        "tCon3Num":" 연락처 : 010-2388-4865",
+        "tCon3Mail":"E-mail : junsu_kim@lotte.net"
+      },
+      {
+        "group":" 포장재",
+        "title":"증착지(label)",
+        "path":"images/printCon2-1.jpg",
+        "con":"알루미늄을 종이에 증착하여 광택효과가 뛰어나며, Curling 안정성이 우수하여 고속포장에 유리합니다.",
+        "tCon1":"병 맥주용 라벨",
+        "tCon2":"세병시 용이(종이, 잉크 동시 박리로 처리비용 절감)",
+        "tCon3Name":"담당자 : 김현석",
+        "tCon3Num":"연락처 : 010-8480-0433",
+        "tCon3Mail":"E-mail : hyunseok-kim@lotte.net"
+      },
+      {
+        "group":" 포장재",
+        "title":"수축 라벨(Shrinkage label)",
+        "path":"images/printCon2-2.jpg",
+        "con":"인쇄성이 우수하고, 각종 플라스틱 용기에 수축이 용이한 포장재입니다.",
+        "tCon1":"각종 플라스틱 제품",
+        "tCon2":"내용물 보존성 우수 및 고객의 요청에 맞는 제품 강도 및 투명성, 다양한 색상 구현",
+        "tCon3Name":"담당자 :  박재현",
+        "tCon3Num":"연락처 : 010-4752-3934",
+        "tCon3Mail":"E-mail : jaehyun.park1@lotte.net"
+      }
+    ],
+    "con3": [
+      {
+        "group":" 변형상자",
+        "title":"Off-Set상자(CASE 상자)",
+        "path":"images/cardbordCon1-1.jpg",
+        "con":"상부만 개폐되며 고급 선물용 상자에 사용됩니다. 삼면 접착이고, 음료수, 주류, 식품 등에 많이 쓰이며 골판지 위에 인쇄물을 합지하므로 견고합니다.",
+        "tCon1":"2,450mm X 1,280mm",
+        "tCon2":" 도안부위에 잉크가 부탁되고 Blanket롤의 잉크가 피인쇄물을 인쇄시키는 방식입니다.",
+        "tCon3Name":"담당자 : 계영균",
+        "tCon3Num":"연락처 : 010-4618-7439",
+        "tCon3Mail":"E-mail : yggye@lotte.net"
+      },
+      {
+        "group":" 변형상자",
+        "title":"고급인쇄상자(high-quality printing box) ",
+        "path":"images/cardbordCon1-2.jpg",
+        "con":"정밀 인쇄기(HD Flexo)를 통해 고급인쇄가 필요한 농산물박스, 산업용박스, 식품박스등에 사용됩니다. 친환경 수성잉크를 사용하여 환경오염을 예방하는 친환경 제품입니다.",
+        "tCon1":"2,450mm X 1,280mm",
+        "tCon2":" 초대형 상자를 1합으로 생산 가능하며, 정교한 망점 인쇄로 매장 디스플레이용으로 최적",
+        "tCon3Name":"담당자 : 김준수",
+        "tCon3Num":" 연락처 : 010-2388-4865",
+        "tCon3Mail":"E-mail : junsu_kim@lotte.net"
+      },
+      
+      {
+        "group":" A형상자",
+        "title":"Pre-Printing상자",
+        "path":"images/cardbordCon2-1.jpg",
+        "con":"기존의 가공 후 인쇄(POST-PRINT)하는 방법이 아닌 인쇄 후 가공(PRE-PRINT)하여 만드는 상자입니다.",
+        "tCon1":"2,250mm X 1,500mm",
+        "tCon2":"원지 인쇄 > 원단 생산 > 상자 가공",
+        "tCon3Name":"담당자 : 민동주",
+        "tCon3Num":"연락처 : 010-5581-6855",
+        "tCon3Mail":"E-mail : dimhin@lotte.net"
+      },
+      {
+        "group":" A형상자",
+        "title":"Flexo 상자",
+        "path":"images/cardbordCon2-2.jpg",
+        "con":"상하가 개폐되는 단면접착 골판지 상자로 식품, 제과, 농수산물에 사용됩니다.",
+        "tCon1":"2,000mm X 1,200mm",
+        "tCon2":"볼록하게 조각된(양각) 화선부에 잉크를 묻혀 피인쇄체에 직접 전이시키는 형태",
+        "tCon3Name":"담당자 : 민동주",
+        "tCon3Num":"연락처 : 010-5581-6855",
+        "tCon3Mail":"E-mail : dimhin@lotte.net"
+      }
+    ],
+    "con4": [
+      {
+        "group":"2 Piece CAN",
+        "title":"슬림캔(Slim CAN)",
+        "path":"images/canCon1-1.jpg",
+        "con":"180㎖, 250㎖를 주용기로 하며 탄산음료, 커피 및 차류용으로 사용합니다.",
+        "tCon1":"탄산음료, 커피 및 차류용 등",
+        "tCon2":"150㎖, 190㎖, 200㎖, 210㎖, 250㎖",
+        "tCon3Name":"담당자 : 임성우",
+        "tCon3Num":"연락처 : 02-801-8187",
+        "tCon3Mail":"E-mail : limsw@lotte.net"
+      },
+      {
+        "group":"2 Piece CAN",
+        "title":"스터비캔 (Stubby CAN)",
+        "path":"images/canCon1-2.jpg",
+        "con":"250㎖, 355㎖, 500㎖를 주용기로 하며 맥주, 탄산음료, 주스 및 전통음료용으로 사용합니다.",
+        "tCon1":"맥주, 탄산음료, 주스 및 전통음료 등",
+        "tCon2":"250㎖, 355㎖",
+        "tCon3Name":"담당자 : 임성우",
+        "tCon3Num":"연락처 : 02-801-8187",
+        "tCon3Mail":"E-mail : limsw@lotte.net"
+      }
+    ]
+  }

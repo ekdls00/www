@@ -1,0 +1,106 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{
+    position: relative; height: 580px; text-align: center;
+}
+.contentArea .conTitle::before{
+    position: absolute;
+    background: url(../images/sub1/sub1_company.jpg) 0 0 no-repeat;
+    display: block; content: ''; width: 2000px; height: 900px;
+    top: -250px; left: -250px; z-index: -10;
+}
+.contentArea .conTitle p:nth-child(1){ 
+    display: block; width: 450px; text-align: center;
+    font-size: 1.875em; margin: 150px auto 80px; line-height: 1.5em;
+}
+.contentArea .titlePont{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    font-size: 1.375em; line-height: 2em; margin: 0 30px;
+}
+
+/*  */
+.contentArea .conDivide{
+    margin:100px 0 80px; display: inline-block;
+}
+.contentArea .conDivide li{float: left; margin: 0 20px;}
+.contentArea .conDivide li a{
+    color: #666; border: 1px solid #666; border-radius: 30px; 
+    padding: 10px 40px; font-size: 1.25em; transition: all .8s ease-out;
+}
+.contentArea .conDivide li a:hover{
+    color: #da291c; border: 1px solid #da291c; border-radius: 30px;
+}
+
+/* 기업 정보 콘텐츠 */
+.contentArea .conData{ 
+    margin:30px 150px 0 -1000px; position:relative; width:2000px; height: 970px; overflow:hidden; left: 50%; top: 0;
+}
+.contentArea .conData h3{font-size: 2.5em; font-weight: 500; margin-bottom: 50px;}
+.contentArea .conData>p{ 
+    width: 1000px; display: block; margin: 0 auto; font-size: 1.375em; 
+    line-height: 2em; margin-bottom: 80px;
+}
+.contentArea .conData .portfolio{
+    position: relative; left: 0; top: 0; overflow: hidden; width:2000px; height: 591px; background: #000;
+}
+.contentArea .conData .portfolio li{display: none; position: relative;}
+.contentArea .conData .portfolio img{  
+    animation: ani 30s linear infinite; position: relative; 
+    width: 2000px; left:50%; margin-left: -2000px;
+}
+
+@keyframes ani{
+    from{transform: scale(1);}
+    to{transform: scale(1.2);}
+}
+
+.portfolio .btn{
+    position: absolute; display: block; font-size: 3.5em; top: 250px; 
+    cursor: pointer; color: rgba(255, 255, 255, .5); transition: all .5s ease-out;
+  }
+.portfolio .btn:hover{color: rgba(255, 255, 255, .9);}
+.portfolio .btnLeft{left: 60%; margin-left: -830px;}
+.portfolio .btnRight{left: 40%; margin-left: 730px;} 
+
+.contentArea .conData .portfolio .slogan{  position: absolute; top: 30%; left: 510px; text-align: center; color: #fff; width:1000px;}
+.portfolio .slogan p:nth-child(1){font-size: 1.8em; color: #fff; font-weight: 500;}
+.portfolio .slogan p:nth-child(2){font-size: 1.250em; color: #fff; width: 720px; margin: 0 auto; padding-top: 100px; line-height: 1.75em;}
+
+
+/* 핵심가치 콘텐츠 */
+.contentArea .value{margin: 0 auto 150px; text-align: center; overflow: hidden;}
+.contentArea .value h3{font-size: 2.5em; font-weight: 500; margin-bottom: 50px;}
+.contentArea .value>p{ 
+    width: 1000px; display: block; margin: 0 auto; font-size: 1.375em; 
+    line-height: 2em; margin-bottom: 80px;
+}
+.value .valueList{}
+.value .valueList li{float: left; }
+.value .valueList li:hover dt{color: #fff;}
+.value .valueList dl{}
+.value .valueList dl dt{
+    font-weight: 500; box-shadow:5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.value .valueList li .valueTitle1{color:#877669;  transition: ease-out .8s; }
+.value .valueList li .valueTitle2{color:#666; transition: ease-out .5s;}
+.value .valueList li .valueTitle3{color: #999; transition: ease-out .5s;}
+
+.value .valueList li:nth-child(1):hover .valueTitle1{background:#877669;}
+.value .valueList li:nth-child(2):hover .valueTitle2{background:#666;}
+.value .valueList li:nth-child(3):hover .valueTitle3{background:#999;}
+
+.value .valueList dl dt p:nth-child(1){ font-family: "Roboto", sans-serif;}
+.value .valueList dl dd{
+    text-align: center; line-height: 1.8em; margin-top: 30px; color: #666; 
+}
+
+
+
+
+
+

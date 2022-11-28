@@ -1,0 +1,26 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 재무정보 본문영역 */
+.contentArea {
+  margin: 0 auto;
+  text-align: center;
+  width: 1200px;
+}
+.contentArea .conTitle {
+  position: relative;
+  height: 200px;
+  text-align: center;
+}
+
+.contentArea .conTitle p {
+  display: block;
+  text-align: center;
+  font-size: 1.875em;
+  margin: 150px auto 50px;
+  line-height: 1.5em;
+}
+.contentArea .titlePoint {
+  color: #da291c;
+}

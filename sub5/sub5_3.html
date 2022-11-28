@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고객지원</title>
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../sub5/common/css/sub5common.css" />
+    <link rel="stylesheet" href="../sub5/css/sub5_content3.css" />
+
+    <script src="https://kit.fontawesome.com/2b984aa695.js" crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+      <? include "../common/sub_header.html" ?>
+
+      <div class="main">
+        <img src="./common/images/title.jpg" alt="" />
+        <h3>고객지원</h3>
+      </div>
+
+      <!-- 서브 네비 영역 -->
+      <div class="subNav">
+        <ul>
+          <li><a href="./sub5_1.html">제품문의</a></li>
+          <li><a href="./sub5_2.html">FAQ</a></li>
+          <li><a class="current" href="./sub5_3.html">재무정보</a></li>
+        </ul>
+      </div>
+
+      <!-- 본문 영역 -->
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span>HOME </span>&gt;<span> 고객지원 </span>&gt;<strong>
+              재무정보</strong>
+          </div>
+          <h2>재무정보</h2>
+        </div>
+
+        <!-- 본문 콘텐츠 영역 -->
+        <div class="contentArea">
+          <div class="conTitle">
+            <p>
+              가치 중심 경영을 통해 주주가치를 극대화하겠습니다.
+            </p>
+        </div>
+
+        <div class="financeChart">
+          <div class="chart">
+            <p>매출액</p>
+            <p>(단위: 백만원)</p>
+            <canvas id="myChart1"></canvas>
+          </div>
+          
+          <div class="chart">
+            <p>영업이익</p>
+            <p>(단위: 백만원)</p>
+            <canvas id="myChart2"></canvas>
+          </div>
+          
+          <div class="chart">
+            <p>부채비율</p>
+            <p>(단위: %)</p>
+            <canvas id="myChart3"></canvas>
+          </div>
+        </div>
+
+        <!-- 손익계산서 -->
+        <div class="schedule">
+        <h3>손익계산서</h3>
+        <p>(단위: 백만원)</p>
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>2019</th>
+              <th>2020</th>
+              <th>2021</th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr> 
+              <td>매출액</td>
+              <td>885,257</td>
+              <td>807,665</td>
+              <td>855,926</td>
+            </tr>
+            <tr> 
+              <td>영업이익</td>
+              <td>15,459</td>
+              <td>7,333</td>
+              <td>20,165</td>
+            </tr>
+            <tr> 
+              <td>법인세 비용차감전 순이익</td>
+              <td>21,221</td>
+              <td>12,439</td>
+              <td>98,774</td>
+            </tr>
+            <tr> 
+              <td>당기순이익</td>
+              <td>4,548</td>
+              <td>10,613</td>
+              <td>73,362</td>
+            </tr>
+          </tbody> 
+        </table>
+      </div>
+
+      <!-- 재무상태표 -->
+      <div class="schedule">
+        <h3>재무상태표</h3>
+        <p>(단위: 백만원)</p>
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>2019</th>
+              <th>2020</th>
+              <th>2021</th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr> 
+              <td>자산총계</td>
+              <td>1,759,773</td>
+              <td>1,777,125</td>
+              <td>1,633,779</td>
+            </tr>
+            <tr> 
+              <td>부채총계</td>
+              <td>843,717</td>
+              <td>951,690</td>
+              <td>786,287</td>
+            </tr>
+            <tr> 
+              <td>자본총계</td>
+              <td>915,056</td>
+              <td>795,435</td>
+              <td>877,500</td>
+            </tr>
+            <tr> 
+              <td>부채비율</td>
+              <td>92.1%</td>
+              <td>123.4%</td>
+              <td>86.2%</td>
+            </tr>
+          </tbody> 
+        </table>
+      </div>
+
+          
+      </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/chart.js"></script>
+    <script src="./js/chartList.js"></script>
+  </body>
+</html>

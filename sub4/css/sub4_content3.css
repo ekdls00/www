@@ -1,0 +1,45 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 복리후생 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; width: 1200px;}
+.contentArea .conTitle{
+    position: relative; height: 200px; text-align: center;
+}
+
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 150px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+/* 상단 콘텐츠 */
+.contentArea .contop {height: 320px;}
+.contentArea .contop ul{ margin: 0 auto; overflow: hidden;}
+.contentArea .contop li{ 
+    float: left; width: 270px; height: 350px; margin: 10px 15px;
+    background: #fafafa; border-radius: 10px; box-shadow: 5px 5px 5px rgba(102, 102, 102, .2); border-top: 5px solid #da291c; 
+    /* border-left: 5px solid rgba(102, 102, 102, 0); border-right: 5px solid rgba(102, 102, 102, 0); */
+}
+/* .contentArea .contop li:hover{border: 5px solid #da291c;} */
+.contentArea .contop li img{margin-top: 40px;}
+.contentArea .contop li dl{list-style-type: disc;}
+.contentArea .contop li dt{font-size: 1.625em; margin: 15px 0; font-weight: 500;}
+.contentArea .contop li dd{line-height: 2em; margin: 0 20px;}
+
+/* 하단 콘텐츠 */
+.contentArea .conBottom {margin: 100px 0 200px;}
+.contentArea .conBottom ul{ margin: 0 auto; overflow: hidden;}
+.contentArea .conBottom li{ 
+    float: left; width: 270px; height: 350px; margin: 10px 15px;
+    background: #fafafa; border-radius: 10px; box-shadow: 5px 5px 5px rgba(102, 102, 102, .2); border-top: 5px solid #da291c;
+}
+.contentArea .conBottom li img{margin-top: 40px;}
+.contentArea .conBottom li dl{list-style-type: disc;}
+.contentArea .conBottom li dt{font-size: 1.625em; margin: 15px 0; font-weight: 500;}
+.contentArea .conBottom li dd{line-height: 2em; margin: 0 20px;}

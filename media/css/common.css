@@ -1,0 +1,165 @@
+/* Reset CSS  */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@font-face {
+    font-family: 'LeferiPoint-SpecialA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+html{font-size: 16px;}
+body {font-size:16px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li{ line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+h3{font-family: 'LeferiPoint-SpecialA';}
+/* 와이드 pc 1280px 이상 */
+
+
+/* 헤더 공통 영역 */
+#wrap{width:100%; overflow: hidden; font-weight: 500; font-family: 'Lora', serif;}
+#headerArea{
+    position:fixed; z-index: 30; height: 110px; background: rgba(0,0,0,.5); 
+    left:0; top: 0;  width: 100%; font-family: 'LeferiPoint-SpecialA';
+}	
+#headerArea	.headerInner{margin: 0 5%; overflow: hidden}
+#headerArea .menu_ham {display: none;}
+#headerArea h1{    
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -75px;}
+#headerArea h1 a{
+    width: 150px; height: 70px; background: url(../images/logo.png) 0 50% no-repeat; background-size: 100%;
+    display: block; text-indent: -9999px; overflow: hidden; transition: all 0.5s ease-out;
+}	
+#headerArea #gnb{margin-top: -15px; text-align: center;}
+#headerArea #gnb ul{overflow: hidden; display: inline-block;}
+#headerArea #gnb ul li{float: left; font-size: 1.145rem; letter-spacing: 0.045rem; margin: 0 40px;}
+#headerArea #gnb ul li:nth-child(2){ margin-right:150px}
+#headerArea #gnb ul li:nth-child(3){ margin-left:100px}
+#headerArea #gnb ul li h3{ float: left; margin-top: 60px}
+#headerArea #gnb ul li a{color: #fff; text-decoration: none; transition: all .4s ease-out;}
+#headerArea #gnb ul li a:hover{color: #edbfc2;}
+
+
+/* 푸터 공통 영역 */
+#footerArea{background: #e590a5;position: relative; height:150px; padding: 20px 5%;}
+#footerArea .footerInner{width:100%;margin:0 auto}
+#footerArea .fLogo{
+    width: 50%; height:50%; background:url(../images/footer_logo.png) center no-repeat; background-size:contain; text-indent: -9999%; margin: 10px auto;
+}
+#footerArea p{text-align: center; color: #fff;}
+.topMove{
+    display: block;  width: 130px; height: 100px; position: absolute;
+    left: 50%; margin-left: -65px; bottom: 187px; transition: all .5s ease-out;
+}
+.topMove .topText{display: flex; justify-content: center;  margin-bottom: -20px;}
+.topMove .topText div{margin: 0 20px; color: #e590a5;}
+.topMove .topText div:nth-of-type(1){transform: rotateZ(-45deg)}
+.topMove .topText div:nth-of-type(2){position: absolute; top: -5px; left: 38px;}
+.topMove .topText div:nth-of-type(3){transform: rotateZ(30deg)}
+.topMove .topBtn{
+    background: url(../images/footer_top.png) center no-repeat; display: block; background-size: contain;  width: 130px; height: 110px;
+}
+.topMove span:nth-of-type(2){text-indent: -9999%;}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#headerArea.on .menu_ham span, #headerArea.on .menu_ham span::after, #headerArea.on .menu_ham span::before{
+        background: #666;
+    }
+    #headerArea .menu_ham {
+        height: 200px;
+        display: block;
+        z-index: 100;
+        border-radius: 3px;
+        float: right;
+    }
+    #headerArea .menu_ham span {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        position: relative;
+        text-indent: -9999px;
+        display: block;
+        margin: 50px 0;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    #headerArea .menu_ham span::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    #headerArea .menu_ham span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+
+    /* nav 영역*/
+    #gnb{position: absolute; width: 60%; right:-100%; top:-20px; opacity: 0; background: #333;z-index:60 }
+    #headerArea #gnb ul{margin-top: 70px; padding: 0 50px; display: table;}
+    #headerArea #gnb ul li{float: none; margin: 0;}
+    #headerArea #gnb ul li:nth-child(2){ margin-right:0}
+    #headerArea #gnb ul li:nth-child(3){ margin-left:0}
+    #headerArea #gnb ul li h3{ float: left; margin-top: 60px}
+    #headerArea #gnb ul li a{color: #fff; text-decoration: none; transition: all .4s ease-out;}
+    #headerArea #gnb ul li a:hover{color: #edbfc2;}
+
+    
+    /* 메뉴가 열렸을때 */
+    #headerArea.mn_open .menu_ham span, #headerArea.mn_open .menu_ham span::before, #headerArea.mn_open .menu_ham span::after {
+        background: #fff; transition: all .3s; z-index: 80;
+    }
+    #headerArea.mn_open .menu_ham span {
+        background: rgba(0,0,0,0);
+        transition: all .3s;
+    }
+    #headerArea.mn_open .menu_ham span::before {
+        transform: rotate(45deg); top: 0; transition: all .3s;
+    }
+    #headerArea.mn_open .menu_ham span::after {
+        transform: rotate(-45deg); top: 0; transition: all .3s;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}

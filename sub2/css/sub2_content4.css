@@ -1,0 +1,106 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .conTitle{}
+
+.contentArea .conTitle p{ 
+    display: block; width: 520px; text-align: center;
+    font-size: 1.875em; margin: 150px auto 80px; line-height: 1.5em;
+}
+
+/* 텝 */
+.contentArea .tap{margin: 100px 0 10px;}
+.tap li{width: 50%; margin: 0 auto;}
+.tap li a{
+    height: 60px; font-size: 1.375em; color: #999; display: block;
+    border: 1px solid #ccc; border-left-width: 0; padding-top: 20px;
+    transition: ease-out .5s;
+}
+.tap li a:hover{background: rgba(204, 204, 204, .1);}
+.tap li .tap_current{border: 1px solid #da291c; color: #da291c;}
+
+/* 콘텐츠1 */
+.contentArea .con .conArea{position: relative; margin: 100px 0 150px;} 
+.con .conArea img{
+    position: relative; top: 0; left: -400px;  display: block; margin: 0 auto;
+}
+.con .conText{
+    width: 1200px; height: 280px; position: absolute;  top: 350px; left: 0;
+    box-shadow: 10px 10px 10px rgba(99, 99, 99, .15); background: #fff;
+    border-top: 5px solid #da291c; overflow: hidden;
+}
+.con .conText h3{
+    width: 40%; height: 280px; float: left; font-size: 1.875em;
+    margin-top: 120px;
+}
+.con .conText p{
+    width: 60%; height: 280px; text-align: justify;
+    margin-top: 90px; font-size: 1.250em; width: 1100px; 
+    line-height: 1.875em; 
+}
+
+.contentArea .report{overflow: hidden; height: 650px;}
+.report ul li{float: left; margin-top: 100px; position: relative; }
+.report ul li img{width: 530px; height: 270px; overflow: hidden; } 
+.report ul li:nth-child(2){float: right;}
+
+/* .fullSquare */
+.report li :hover .fullSquare{ transition: ease-out .8s; height: 70px; background: rgba(218, 41, 28, .7)}
+.report p{float: left; margin:20px 10px;}
+.report li :hover p{color: #fff; transition: ease-out .6s;}
+.report span{float: right; margin:20px 10px; color: #da291c;}
+.report li :hover span{color: #fff; transition: ease-out .6s;}
+
+/* square - 콘텐츠 감싸는 선 */
+.report li .square{position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+.report li .square span{position: absolute; display: block; transition: ease-out .5s; background: #da291c;}
+.square span:nth-child(1) {left: -10px; top: -20px; width: 0; height: 2px; transition-delay: .3s}
+.square span:nth-child(2) {right:-10px; top:-20px; width: 2px; height: 0; transition-delay:.2s;}
+.square span:nth-child(3) {right:-10px; bottom: -20px; width: 0; height: 2px; transition-delay:.1s; }
+.square span:nth-child(4) {left: -10px; bottom: -20px; width: 2px; height: 0; transition-delay:0ms; }
+
+.square:hover span:nth-child(1) {width: 100%;}
+.square:hover span:nth-child(2) {height: 100%;}
+.square:hover span:nth-child(3) {width: 100%;}
+.square:hover span:nth-child(4) {height: 100%;}
+
+/* 콘텐츠1 모달창 */
+.con .modal_box2{
+    position: fixed; left: 0; top: 0; z-index: 1000; width: 100%; height: 100%; background-color: #3a3e50; opacity: 0.5; display: none; overflow: hidden;
+}
+.con .popup{
+    position: fixed; top: 50%; left: 50%; margin: -325px 0 0 -600px; width: 1200px; height: 650px; background: #fff; box-shadow: 1px 3px 7px 0px #666; z-index: 1001; display: none;
+}
+.con .popup img{display: block; width: 500px; height: 300px; float: left; margin: 25px 20px 20px 20px;}
+.con .popup .conRight{float: right; display: block; width: 660px; height: 360px; text-align: justify;}
+.con .popup .title{ font-weight:700; margin:40px 0 40px 10px; font-size: 2em;}
+.con .popup .subTitle{display: block; font-weight: 400; margin: 60px 0 10px 10px; color: #333;}
+.con .popup .popCon{display: block; font-size: 1.12em; margin: 30px 10px 10px 10px; width: 570px; ;}
+.con .popup .pay{
+    border: 1px solid #ccc; width: 1150px; margin: 0 auto; height: 264px;
+    overflow: hidden; line-height: 2em;
+}
+.con .popup dl{overflow: hidden;}
+.con .popup dt{
+    float: left; background: #999; color: #fff; width: 30%; padding: 10px 0;
+    border-right: 1px solid #ccc;
+}
+.con .popup dl dt, .con .popup dl dd{border-bottom: 1px solid #ccc;}
+.con .popup dt:nth-of-type(3){padding: 65px 0;}
+.con .popup dd:nth-of-type(3){border: none;}
+.con .popup dd:nth-of-type(4){border: none;}
+.con .popup dd:nth-of-type(5){border: none;}
+.con .popup dd{text-align: justify; padding: 10px 0 10px 370px; }
+.con .popup .close_btn{
+    position: absolute; top: 25px; left:95%; display: block; width: 32px; height: 32px; padding: 9px 9px; background: url(../common/img/close.png) 0 0 no-repeat;
+}
+
+.con .bgbox{
+    position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);
+    z-index: 101; display: none;
+}
+
+

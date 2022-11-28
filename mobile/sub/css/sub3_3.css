@@ -1,0 +1,103 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.main {
+  background: url(../image/sub3_tilte.png) center no-repeat; background-size: cover; width: 100%; position: relative; height: 200px;}
+.main h3{
+  font-size: 2em; color: #fff; position: absolute; font-weight: 400;
+  left: 50%; width: 110px; top: 90px; margin-left: -55px;
+}
+
+/* 서브 네비 영역 */
+.subNav{border-bottom: 1px solid #ccc;} 
+.subNav ul{ margin: 0 auto; overflow: hidden; text-align: center; }
+.subNav ul li{position: relative;  float: left; width: 33.3%;}
+.subNav ul li a{
+    display: inline-block; font-weight: 500; line-height: 2em; padding: 10px 0; font-size: 1.071rem; width: 100%;
+}
+.subNav ul li .current{color: #da291c; border-bottom: 2px solid #da291c; width: 100%;}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center;}
+.contentArea .titleArea h2{
+  font-size: 2rem; font-weight: 500; text-align: center;
+  margin: 50px 0; position: relative;
+}
+.contentArea .titleArea h2::before{
+  content: ''; position: absolute; width: 3px; height: 40px; 
+  background: #da291c; top: 70px; left: 50%;
+}
+.contentArea .conTitle{
+    position: relative;}
+.contentArea .conTitle p:nth-child(1){ 
+    display: block; width: 80%; text-align: center;
+    font-size: 1.143rem; margin: 90px auto 30px; line-height: 1.5em;
+}
+.contentArea .titlePont{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    line-height: 2em; width: 90%; margin: 0 auto;
+}
+
+/* 슬로건 */
+.contentArea .sloganArea{margin-bottom: 50px;}
+.sloganArea .slogan{
+    width: 90%; background: #da291c; border-radius: 60px; margin: 0 auto;
+}
+.sloganArea .slogan p:nth-child(1){
+    color: transparent; font-size: 1.143em; padding-top: 20px; position: relative; white-space: nowrap; 
+}
+.sloganArea .slogan p:nth-child(1)::before{
+    content: "“ FINE TODAY, GREEN TOMORROW ”"; position: absolute; 
+    top: 15px; left: 10%; width: 100%; height: 65%; color: #fff;
+    overflow: hidden; border-right: 1px solid rgb(255, 255, 255);
+    animation: typing 6s steps(31) infinite;
+}
+
+@keyframes typing{
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 77%;
+    }
+    100%{
+        width: 77%; 
+    }
+}
+.sloganArea .slogan p:nth-child(2){color: rgba(255, 255, 255, .5);}
+
+.sloganArea .keyword{margin:100px auto 100px; height: 400px;}
+.keyword li{position: relative; width: 80%; border: 1px solid #999; margin: 5px auto}
+.keyword li:nth-child(1)::before{
+    content: ''; position: absolute; top: 15%; left: 50%; width: 80px; height: 80px; background: url(../image/sub3_dream.png) center no-repeat;
+    background-size: contain; margin-left: -40px;
+}
+.keyword li:nth-child(2)::before{
+    content: ''; position: absolute; top: 15%; left: 50%; width: 80px; height: 80px;  margin-left: -40px; background: url(../image/sub3_eco.png) center no-repeat;background-size: contain;
+}
+.keyword li:nth-child(3)::before{
+    content: ''; position: absolute; top: 15%; left: 50%; width: 80px; height: 80px;  margin-left: -40px; background: url(../image/sub3_sysnergy.png) center no-repeat;background-size: contain;
+}
+.keyword li:nth-child(4)::before{
+    content: ''; position: absolute; top: 15%; left: 50%; width: 80px; height: 80px; margin-left: -40px; background: url(../image/sub3_indestry.png) center no-repeat;background-size: contain;
+}
+.keyword li dt{font-size: 1.143rem; padding-top: 120px; color: #666; margin-bottom: 10px;}  
+.keyword li dd{background: #ccc; padding: 15px 0;}
+
+
+/* 사회공헌활동 */
+.contentArea .activity{margin-bottom: 50px;}
+.activity .activityTitle{margin-top: 50px;}
+.activity .activityTitle h3{font-size: 1.5em; font-weight: 500;}
+.activity .activityTitle>p{line-height: 1.5em; margin: 30px 0; color: #999;}
+.activity li{overflow: hidden;}
+.activity .leftList .listImg{float: left; width: 600px; height: 430px; overflow: hidden;}
+.activity .leftList dl{
+    text-align: justify; padding: 30px 20px; box-sizing: border-box; float: right;}
+.activity .rightList img{float: right;}
+.activity .rightList dl{
+   text-align: justify; padding: 30px 20px; box-sizing: border-box; float: left;}
+.activity li dl dt:nth-child(1){color: #da291c; font-size: 1.25em; font-weight: 500;}
+.activity li dl dt:nth-child(2){font-size: 1.63em; font-weight: 500;}
+.activity li dl dd:nth-of-type(1){margin: 30px 0; font-size: 1.25em; line-height: 1.5em; color: #666;}
+.activity li dl dd:nth-of-type(2){margin-bottom: 30px; font-size: 1.13em; line-height: 2.5em; color: #666; font-weight: 600;}

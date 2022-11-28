@@ -1,0 +1,70 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 기업소개 본문영역 */
+.contentArea{ margin: 0 auto; text-align: center; overflow: hidden;}
+.contentArea .conTitle{
+    position: relative; text-align: center; margin-bottom: 50px;
+}
+.contentArea .conTitle p{ 
+    text-align: center;
+    font-size: 1.875em; margin: 50px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+/* 첫 번쨰 콘텐츠 */
+.contentArea .conList{width: 1200px; height: 800px;}
+.conList li{ position: relative;  height:210px; overflow: hidden; border-bottom: 1px solid #ccc;}
+.conList li dl{margin: 45px 0; }
+.conList li dt{
+    float: left; font-size: 1.75em; line-height: 1.5em; margin: 20px 10px 20px 100px; 
+    text-align: justify; width: 300px; font-weight: bold; 
+}
+.conList li:nth-child(1)::after{
+    content: ''; position: absolute; top: 0; left: 0; height: 1px; width: 1200px; margin: 0 auto; background: #ccc; 
+}    
+/* 카운트 */
+.conList li:nth-child(1)::before{
+    content: '01'; position: absolute; top: 90px; left: 20px; color: #da291c; font-size: 1.88em; font-weight: bold; 
+}
+.conList li:nth-child(2)::before
+{content: '02'; position: absolute; top: 90px; left: 20px; color: #da291c; font-size: 1.88em;font-weight: bold; 
+}
+.conList li:nth-child(3)::before{
+    content: '03'; position: absolute; top: 90px; left: 20px; color: #da291c; font-size: 1.88em;font-weight: bold; 
+}
+.conList li dd{
+    float: right; width: 700px; font-size: 1.5em; line-height: 1.5em; margin: 0 40px; 
+    text-align: justify; font-weight: 400;
+}
+
+/* 두 번째 컨텐츠 */
+.contentArea .core{height: 950px;}
+.core h3{font-size: 2.5em; font-weight: 500; margin-bottom: 20px;}
+.core p{ line-height: 2em; margin: 0 30px 50px; color: #999;}
+
+
+.coreList{height: 650px;}
+.coreList li{float: left; position: relative; margin-top: 50px;}
+.coreList dl{margin: 0 36px;}
+.coreList dl dt{
+     font-size: 1.75em; font-weight: 500; margin-top: 250px;  border-radius: 160px; 
+}
+.coreList li:nth-child(1)::before{
+    content: ''; position: absolute; top: 30px; left: 100px; width: 200px; height: 200px;background: url(../images/sub1/environment1.png) center no-repeat;
+}
+.coreList li:nth-child(2)::before{
+    content: ''; position: absolute; top: 30px; left: 100px; width: 200px; height: 200px;background: url(../images/sub1/environment2.png) center no-repeat;
+}
+.coreList li:nth-child(3)::before{
+    content: ''; position: absolute; top: 30px; left: 100px; width: 200px; height: 200px;background: url(../images/sub1/environment3.png) center no-repeat;
+}
+
+.coreList dl dd{
+    font-size: 1.250em; width: 325px; text-align: center; line-height: 1.5em; margin-top: 10px; color: #999; font-weight: 400;
+}

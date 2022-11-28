@@ -1,0 +1,113 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/**ESG 경영*/
+.contentArea{ margin: 0 auto; text-align: center; overflow: hidden;}
+.contentArea .conTitle{
+    position: relative; text-align: center; margin-bottom: 110px;
+}
+.contentArea .conTitle p{ 
+    display: block; text-align: center;
+    font-size: 1.875em; margin: 50px auto 15px; line-height: 1.5em;
+}
+.contentArea .titlePoint{color: #da291c;}
+.contentArea .conTitle p:nth-child(2){
+    width: 1000px; text-align: center; color: #999;
+    font-size:1.125em; line-height: 2em; margin: 0 auto;
+}
+
+.contentArea .greenBox{overflow: hidden; margin: 0 auto 150px;}
+.greenBox dl{
+    position: relative; float: left; height: 450px; width: 330px; border: 1px solid #ccc; margin: 0 15px; padding: 30px 15px; transition: all .5s;
+}
+.greenBox .lihover{border: 1px solid #da291c; color: #da291c;}
+.greenBox dl:hover{border: 1px solid #da291c; }
+.greenBox dl:hover dt:nth-child(1){color: #da291c;}
+.greenBox dl:nth-child(1):before{
+    content: ''; position: absolute; top: 50%; left: 360px; width: 31px; height: 1px; background: #ccc;
+}
+.greenBox dl:nth-child(2):before{
+    content: ''; position: absolute; top: 50%; left: 360px; width: 31px; height: 1px; background: #ccc;
+}
+.greenBox dl dt:nth-child(1){font-size: 1.75em; line-height: 1.5em; font-weight: 500; transition: all 1s;}
+.greenBox dl dt:nth-child(2){
+    position: relative; font-size: 1.13em; margin: 15px 10px; color: #666; margin: 20px 0 70px 0;
+} 
+.greenBox dl dt:nth-child(2)::before{
+    content: ''; position: absolute; top: 55px; left: 10px; height: 1px; width: 300px; background: #ccc;
+}
+.greenBox dl dd{
+    margin: 150px 20px 50px; text-align: center; color: #999; display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 130px;
+}
+.greenBox dl dd span:nth-child(1){position: relative; float: left; display: block; margin-left: 10px;}
+.greenBox dl .plant span:nth-child(1)::after{
+    content: ''; position: absolute; top: -60px; left: 48px; background: url(../images/sub2/plant1.png) center no-repeat; width: 45px; height: 45px;
+}
+.greenBox dl .basis span:nth-child(1)::after{
+    content: ''; position: absolute; top: -60px; left: 48px; background: url(../images/sub2/basis1.png) center no-repeat; width: 45px; height: 55px;
+}
+.greenBox dl .partnership span:nth-child(1)::after{
+    content: ''; position: absolute; top: -60px; left: 40px; background: url(../images/sub2/partnership1.png) center no-repeat; width: 55px; height: 55px;
+}
+
+.greenBox dl dd span:nth-child(2){position: relative; display: block;}
+.greenBox dl .plant span:nth-child(2)::after{
+    content: ''; position: absolute; top: -60px; left: 58px; background: url(../images/sub2/plant2.png) center no-repeat; width: 33px; height: 45px;
+}
+.greenBox dl .basis span:nth-child(2)::after{
+    content: ''; position: absolute; top: -60px; left: 50px; background: url(../images/sub2/basis2.png) center no-repeat; width: 50px; height: 50px;
+}
+.greenBox dl .partnership span:nth-child(2)::after{
+    content: ''; position: absolute; top: -60px; left: 53px; background: url(../images/sub2/partnership2.png) center no-repeat; width: 50px; height: 55px;
+}
+
+.greenBox dl dd span:nth-child(3){position: relative; display: block; }
+.greenBox dl .plant span:nth-child(3)::after{
+    content: ''; position: absolute; top: -60px; left: 60px; background: url(../images/sub2/plant3.png) center no-repeat; width: 41px; height: 41px;
+}
+.greenBox dl .basis span:nth-child(3)::after{
+    content: ''; position: absolute; top: -60px; left: 52px; background: url(../images/sub2/basis3.png) center no-repeat; width: 50px; height: 60px;
+}
+.greenBox dl .partnership span:nth-child(3)::after{
+    content: ''; position: absolute; top: -60px; left: 42px; background: url(../images/sub2/partnership3.png) center no-repeat; width: 60px; height: 50px;
+}
+
+.greenBox dl dd span:nth-child(4){position: relative; display: block; }
+.greenBox dl .plant span:nth-child(4)::after{
+    content: ''; position: absolute; top: -60px; left: 48px; background: url(../images/sub2/plant4.png) center no-repeat; width: 50px; height: 50px;
+}
+.greenBox dl .basis span:nth-child(4)::after{
+    content: ''; position: absolute; top: -60px; left: 48px; background: url(../images/sub2/basis4.png) center no-repeat; width: 60px; height: 60px;
+}
+.greenBox dl .partnership span:nth-child(4)::after{
+    content: ''; position: absolute; top: -60px; left: 48px; background: url(../images/sub2/partnership4.png) center no-repeat; width: 60px; height: 60px;
+}
+
+/* 두 번쨰 컨텐츠 */
+.contentArea .system{margin-bottom: 150px;}
+.system .sysTitle{margin-bottom: 50px;}
+.sysTitle h3{font-size: 2.5em; font-weight: 500; margin-bottom: 20px;}
+.sysTitle p{line-height: 2em; margin: 0 30px 50px; color: #999;}
+.system .group{
+    width: 1200px; height: 450px; margin: 0 auto; text-indent: -9999px; overflow: hidden;
+    background: url(../images/sub2/groupSystem.jpg) center no-repeat;
+}
+
+/* 세 번째 컨텐츠 */
+.contentArea .estimation{margin:0 auto 200px;}
+.contentArea .estimation  h3{font-size: 2.5em; font-weight: 500;margin-bottom: 40px;}
+.contentArea .estimation span{float: right;}
+.contentArea .estimation table{ margin: 0 auto; border-top: 2px solid #999;}
+.estimation table th{
+    width: 400px; border-bottom: 1px solid #ccc; font-size: 1.25em;
+    font-weight: 500; padding: 10px 0; background: #f3f3f3;
+}
+.estimation table tr td:nth-of-type(2){
+    border-left: 1px solid #ccc; border-right: 1px solid #ccc;
+}
+.estimation table tr td:nth-of-type(3){border-right: 1px solid #ccc;}
+.estimation table td:nth-of-type(1){font-weight:500;}
+.estimation table td {border-bottom: 1px solid #ccc;  padding: 10px 0; font-weight: 300; }
+.estimation p{color: #999; text-align: left; line-height: 1.5em; font-size: 0.88em;}
+.estimation p:nth-of-type(1){color: #999; margin-top: 10px;}
